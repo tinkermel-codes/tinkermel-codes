@@ -40,14 +40,21 @@ I enjoy uncovering patterns in data, shaping them through feature engineering, a
 ---
 
 ## 🛠️ Tech Stack
-Python, Julia
-NumPy, Pandas, Scikit‑Learn  
+### Languages and Tools
+Python, Julia  
+Git, Linux  
+SQL  
+
+
+### Data and ML Libraries 
+NumPy, Pandas, Scikit‑Learn, Seaborn  
 PyTorch (deep learning, model training & evaluation)  
 Flux.jl (neural network experimentation in thesis context)  
-Git, Linux
 
+
+### ML Skills
 EDA, Feature Engineering  
-Model Training & Evaluation
+Model Training & Evaluation  
 Hyperparameter Optimization  
 NLP (TF‑IDF, classical ML)  
 
