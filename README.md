@@ -6,7 +6,7 @@ I enjoy finding patterns in messy and complex data and exploring how algorithms 
 
 ## Projects
 
-### HPOFramework.jl(https://github.com/tinkermel-codes/HPOFramework)
+### [HPOFramework.jl](https://github.com/tinkermel-codes/HPOFramework)
 
 **Hyperparameter Optimization Framework | Julia | Flux.jl**
 
@@ -31,7 +31,7 @@ Some of the main parts I worked on:
 
 For the thesis experiments, I ran each optimization algorithm with **50 random seeds**. Hyperband achieved the best efficiency/performance tradeoff, using on average only **8% of the training epochs used by Grid Search** while reaching **99.6% of the best achievable performance** within the defined search space. The original thesis datasets cannot be published.
 
-### Financial Phrase Sentiment Analysis(https://github.com/tinkermel-codes/financial-phrase-sentiment-analysis)
+### [Financial Phrase Sentiment Analysis](https://github.com/tinkermel-codes/financial-phrase-sentiment-analysis)
 
 **Python | Scikit-Learn | NLP**
 
