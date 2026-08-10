@@ -1,67 +1,60 @@
-# 👋 Hi, I'm Melanie!
- 
-M.Sc. Electrical Engineering & Information Technology
+# Hi, I'm Melanie!
 
-I enjoy uncovering patterns in data, shaping them through feature engineering, and exploring how small algorithmic changes influence how models learn.
+**M.Sc. Electrical Engineering & Information Technology**
 
----
+I enjoy finding patterns in messy and complex data and exploring how algorithms learn from data.
 
-## 🚀 Projects
-- **Automated Hyperparameter Optimization Framework (Master’s Thesis, implementation is not publicly available)**  
-  Designed and implemented a modular hyperparameter optimization framework in Julia from scratch supporting:
-  - Grid Search
-  - Random Search
-  - Hyperband
-  - Bayesian Optimization
-  - BOHB
-  
-  The framework supported configurable and nested hyperparameter search spaces as well as custom training loop integration, enabling flexible benchmarking across different neural network architectures and evaluation metrics. Used Flux.jl for training neural networks and evaluating different architectures as part of the optimization pipeline.
-  
-  Implemented checkpoint-based training continuation for Hyperband and BOHB to avoid redundant retraining during successive optimization rounds.
-  
-  Conducted reproducible large-scale experiments using 50 random seeds per optimization algorithm.
-  
-  Additionally developed a benchmarking suite for generating synthetic training datasets based on network topologies and demand allocation scenarios using a custom K-Shortest-Path First-Fit implementation.
-  
-  Hyperband achieved the best efficiency/performance tradeoff, requiring on average only 8% of the training epochs used by Grid Search while still reaching 99.6% of the best achievable performance within the defined search space.
-  
+## Projects
 
-- **Financial Phrase Sentiment Analysis**  
-  Performed exploratory data analysis, preprocessing, and TF-IDF feature extraction on financial text data.
+### HPOFramework.jl
 
-  Trained and evaluated:
-  - Logistic Regression
-  - Linear SVM
-  - Naive Bayes
-  for sentiment classification.
+**Hyperparameter Optimization Framework | Julia | Flux.jl**
 
-  Linear SVM achieved the best performance with an accuracy of 89.8% and a Macro-F1 score of 0.85.
+As part of my Master's thesis, I developed a modular hyperparameter optimization framework in Julia from scratch supporting:
 
----
+* Grid Search
+* Random Search
+* Hyperband
+* Bayesian Optimization
+* BOHB
 
-## 🛠️ Tech Stack
-### Languages and Tools
-Python, Julia  
-Git, Linux  
-SQL  
+The main goal was to make different optimization strategies comparable while keeping the model, training procedure, and data pipeline independent of the optimizer.
 
+Some of the main parts I worked on:
 
-### Data and ML Libraries 
-NumPy, Pandas, Scikit‑Learn, Seaborn  
-PyTorch (deep learning, model training & evaluation)  
-Flux.jl (neural network experimentation in thesis context)  
+* Hierarchical and configurable hyperparameter search spaces
+* A Julia-native architecture using multiple dispatch
+* User-defined model construction and training functions
+* Checkpoint-based continued training for Hyperband and BOHB
+* Experiment history and result tracking
+* Reproducible optimization using configurable random seeds
 
+For the thesis experiments, I ran each optimization algorithm with **50 random seeds**. Hyperband achieved the best efficiency/performance tradeoff, using on average only **8% of the training epochs used by Grid Search** while reaching **99.6% of the best achievable performance** within the defined search space. The original thesis datasets cannot be published.
 
-### ML Skills
-EDA, Feature Engineering  
-Model Training & Evaluation  
-Hyperparameter Optimization  
-NLP (TF‑IDF, classical ML)  
+### Financial Phrase Sentiment Analysis
 
----
+**Python | Scikit-Learn | NLP**
 
-## 🎯 Interests
-Pattern Discovery  
-Feature Engineering  
-Hyperparameter Optimization   
-Reproducible ML Workflows 
+Built a classical machine learning pipeline for sentiment classification using financial text data.
+
+The project included:
+
+* Exploratory data analysis
+* Text preprocessing
+* TF-IDF feature extraction
+* Model training and evaluation
+
+I compared Logistic Regression, Linear SVM, and Naive Bayes. Linear SVM achieved the best result with an **accuracy of 89.8%** and a **Macro-F1 score of 0.85**.
+
+## Skills
+**Programming:**
+Python (Pandas, NumPy, Scikit-Learn, PyTorch, Seaborn), PySpark, SQL (PostgreSQL), Julia (Flux.jl)
+
+**Tools:**
+Git, Linux, VS Code, Docker, Jupyter, Pluto
+
+**Data Analysis**:
+Exploratory and statistical data analysis, Data cleaning, Feature engineering, Data visualization
+
+**Machine Learning**:
+Classification, Regression, Clustering, Model validation, Neural networks, Hyperparameter optimization
